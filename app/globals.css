@@ -14,7 +14,7 @@ body {
     font-family: monospace;
     background-color: var(--bg);
     color: var(--fg);
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
