@@ -11,3 +11,27 @@
     display: flex;
     justify-content: space-between;
 }
+
+.save, .publish{
+    height: 30px;
+    width: 80px;
+    background: none;
+    outline: none;
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-right: 40px;
+    color: var(--fg);
+}
+
+
+.save:hover, .publish:hover{
+   cursor: pointer;
+   background: var(--accent);
+   color: var(--bg);
+}
+
+.logout:hover, .viewPosts:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

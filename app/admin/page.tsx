@@ -13,8 +13,8 @@ export default function App() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div className="posts">View Posts</div>
-        <div className="logout">Logout</div>
+        <div className={styles.viewPosts} >View Posts</div>
+        <div className={styles.logout} >Logout</div>
       </div>
       <div className="editorContainer">
         <MDEditor
@@ -23,6 +23,12 @@ export default function App() {
           style={{ height: "100%", width: "100%" }}
         />
       </div>
+      
+       <div>
+          <button className={styles.save} type="submit">Save</button>
+          <button className={styles.publish} type="submit">Publish</button>
+       </div>
+
     </div>
   );
 }
