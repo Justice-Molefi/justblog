@@ -11,3 +11,26 @@
     display: flex;
     flex-direction: column;
 }
+
+.email, .password{
+    width: 350px;
+    height: 45px;
+    margin: 5px 0;
+    padding: 5px;
+    background: transparent;
+    outline: none;
+    border: 1px solid var(--accent);
+    border-radius: 2px;
+    color: var(--fg);
+}
+
+
+.login{
+    width: 350px;
+    height: 45px;
+    margin: 5px 0;
+}
+
+.login:hover{
+    cursor: pointer;
+}

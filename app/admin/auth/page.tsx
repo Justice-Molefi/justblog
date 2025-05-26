@@ -4,14 +4,14 @@ export default function Login() {
   return (
     <div className={styles.formContainer}>
       <form className={styles.form}>
-        <div className="email">
-          <input type="email" name="email" />
+        <div>
+          <input className={styles.email} type="email" name="email" placeholder="Email"/>
         </div>
-        <div className="password">
-          <input type="password" name="password" />
+        <div>
+          <input className={styles.password} type="password" name="password" placeholder="Password"/>
         </div>
-        <div className="login">
-          <button type="submit">Login</button>
+        <div>
+          <button className={styles.login} type="submit">Login</button>
         </div>
       </form>
     </div>
