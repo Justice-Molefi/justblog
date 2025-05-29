@@ -2,6 +2,11 @@
     margin-bottom: 2rem;
 }
 
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
 .title {
     color: var(--accent);
     font-size: 1.5rem;

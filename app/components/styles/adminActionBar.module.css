@@ -1,0 +1,26 @@
+
+.edit, .delete, .unpublish {
+  margin: 0 5px;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  color: white;
+}
+
+
+.edit{
+    background: rgb(184, 125, 0);
+}
+.delete {
+    background-color: rgb(104, 0, 0);
+}
+
+.unpublish {
+    background-color: #62804d;
+}
+
+
+.unpublish:hover, .delete:hover, .edit:hover{
+    cursor: pointer;
+}

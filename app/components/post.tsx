@@ -1,10 +1,15 @@
 import Link from "next/link";
 import styles from "./styles/post.module.css";
+import AdminActionBar from "./adminActionBar";
 
 export default function Post({title , date, tags, content, slug} : {title : String, date: String, tags: String[], content: String, slug: String}) {
+  const isAdmin = false;
   return (
         <div className={styles.post}>
-          <h2 className={styles.title}>{title}</h2>
+          <div className={styles.headerContainer}>
+            <h2 className={styles.title}>{title}</h2>
+            { isAdmin ? <AdminActionBar/> : ''}
+          </div>
           <div className={styles.meta}>Posted on {date}</div>
           <div className={styles.tags}>
             {tags.map((tag, i) => (
