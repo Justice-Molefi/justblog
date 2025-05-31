@@ -1,36 +1,46 @@
-.formContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    margin: auto;
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
 }
 
-.form{
-    display: flex;
-    flex-direction: column;
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
-.email, .password{
-    width: 350px;
-    height: 45px;
-    margin: 5px 0;
-    padding: 5px;
-    background: transparent;
-    outline: none;
-    border: 1px solid var(--accent);
-    border-radius: 2px;
-    color: var(--fg);
+.email,
+.password {
+  width: 350px;
+  height: 45px;
+  margin: 5px 0;
+  padding: 5px;
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  color: var(--fg);
 }
 
-
-.login{
-    width: 350px;
-    height: 45px;
-    margin: 5px 0;
+.login {
+  width: 350px;
+  height: 45px;
+  margin: 5px 0;
 }
 
-.login:hover{
-    cursor: pointer;
+.login:hover {
+  cursor: pointer;
+}
+
+.errorMessage {
+  padding: 10px 5px;
+  color: rgb(224, 19, 19);
+  font-weight: bold;
+  width: 350px;
+  background: rgb(8, 8, 8);
+  border-radius: 3px;
+  margin: 10px 0;
 }

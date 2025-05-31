@@ -2,8 +2,17 @@ import Link from "next/link";
 import styles from "./styles/post.module.css";
 import AdminActionBar from "./adminActionBar";
 
-export default function Post({title , date, tags, content, slug} : {title : String, date: String, tags: String[], content: String, slug: String}) {
-  const isAdmin = false;
+interface PostProps {
+  title: string;
+  date: string;
+  tags: string[];
+  content: string;
+  slug: string;
+  isAdmin: boolean;
+}
+
+
+export default function Post({title , date, tags, content, slug, isAdmin} : PostProps) {
   return (
         <div className={styles.post}>
           <div className={styles.headerContainer}>

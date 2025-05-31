@@ -3,7 +3,7 @@
 import MDEditor from "@uiw/react-md-editor";
 import { useState } from "react";
 import styles from "./page.module.css";
-import { createPost } from "./actions/createPost";
+import { createPost, logout } from "./actions";
 import { PostDto } from "../dto/PostDto";
 
 export default function App() {
@@ -53,8 +53,8 @@ export default function App() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.viewPosts}>View Posts</div>
-        <div className={styles.logout}>Logout</div>
+        <a className={styles.viewPosts} href="/">View Posts</a>
+        <div className={styles.logout} onClick={() => logout()}>Logout</div>
       </div>
       <form action={handleSubmit}>
         <div>
